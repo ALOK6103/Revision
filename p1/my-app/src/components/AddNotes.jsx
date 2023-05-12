@@ -5,8 +5,6 @@ const AddNotes = ({addTask}) => {
   const [title,setTitle]=useState("")
   const [description,setDescription]=useState("")
 
-  
-
   const handleClick=(e)=>{
     let tit=e.target.value
     let des=e.target.value
@@ -20,11 +18,15 @@ const AddNotes = ({addTask}) => {
        addTask({title,description})
   }
   return (
+    <>
     <div>
       <input type="text" placeholder='title'  onChange={handleClick}  />
       <input type="text" placeholder='description'   onChange={handleClick} />
       <button onClick={handleChange} >Submit</button>
     </div>
+
+    
+    </>
   )
 }
 
