@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import AddNotes from "./AddNotes";
-import axios from "axios";
+// import axios from "axios";
 import NotesItem from "./NotesItem";
 import Pagination from "./Pagination";
 
