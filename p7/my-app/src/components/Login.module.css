@@ -1,0 +1,67 @@
+#container{
+    width: 99%;
+    height: 99vh;
+    border: 1px solid red;
+    margin: auto;
+    display: flex;
+   
+    padding: 22px;
+    box-sizing: border-box;
+}
+
+#left,#right{
+    width: 50%;
+    height: 100%;
+    border: 1px solid teal;
+}
+
+#right{
+    background-color: #000842;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+}
+
+#left{
+    
+    padding-top: 120px;
+    padding-left: 114px;
+   
+    text-align: left;
+
+}
+
+#sign{
+    font-family:'Courier New', Courier, monospace;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 75px;
+    color: #000000;
+    margin-bottom: 0px;
+}
+
+p>span{
+    color: #0c21c1;
+    font-weight: 400;
+}
+
+form{
+    margin-top: 37px;
+    width: 65%;
+}
+
+input{
+    margin-top: 12px;
+    width: 100%;
+    padding: 18px 0px 18px 22px;
+    background: #ffffff;
+    border: 1px solid #4285f4;
+    border-radius: 9px;
+}
+
+#pass{
+margin-top: 34px;
+display: inline-block;
+}
