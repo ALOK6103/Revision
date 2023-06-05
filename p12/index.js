@@ -67,3 +67,24 @@ let fil=nums.myFilter((num)=>{
 })
 
 console.log(fil)
+
+
+Array.prototype.myReduce=function (cb,initialvalue){
+  let accumalator=initialvalue 
+
+  for (let i = 0; i < this.length; i++) {
+   
+    accumalator=accumalator ? cb(accumalator,this[i],i,this):this[i]
+    
+  }
+
+  return accumalator
+}
+
+// const nums=[1,2,3,4]
+
+let red=nums.myReduce((acc,ele,i,arr)=>{
+   return acc+ele
+})
+
+console.log(red)
