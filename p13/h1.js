@@ -25,3 +25,15 @@ function greeting(name) {
   processUserInput(greeting);
   
   
+
+
+  function process(callback){
+    const fName="Alok"
+    callback(fName)
+  }
+
+  function greet(fName){
+    console.log(`Hi my Name is,${fName}`)
+  }
+
+  process(greet)
