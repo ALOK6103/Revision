@@ -80,3 +80,20 @@
 // console.log(filtered)
 
 
+Array.prototype.myReduce=function (cb,initialValue){
+    let acc=initialValue  
+
+    for(let i=0;i<this.length;i++){
+       acc=acc? cb(acc,this[i],i,this):this[i]
+    }
+
+    return acc
+}
+
+let arr=[1,2,3,4]
+
+let reduced=arr.myReduce((acc,el,i,arr)=>{
+    return acc+el
+})
+
+console.log(reduced)
