@@ -30,14 +30,34 @@
 
 
 
-function wish(name,callback){
-    const msg=`My name is ${name}`
+// function wish(name,callback){
+//     const msg=`My name is ${name}`
 
-    callback(msg)
-}
+//     callback(msg)
+// }
 
-function display(msg){
-    console.log(msg)
-}
+// function display(msg){
+//     console.log(msg)
+// }
 
-wish("Alok",display)
+// wish("Alok",display)
+
+// Array.prototype.myMap=function nAp(cb){
+//     let temp=[]
+
+//     for(let i=0;i<this.length;i++){
+//         temp.push(cb(this[i],i,this))
+//     }
+
+//     return temp
+// }
+
+// let arr=[3,4,5,6,]
+
+// let mapped=arr.myMap((el,i,arr)=>{
+//     return el*3
+// })
+
+// console.log(mapped)
+
+
